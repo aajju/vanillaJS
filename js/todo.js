@@ -38,9 +38,11 @@ function showTodo(todo) {
   const span = document.createElement("span");
   const btn = document.createElement("button");
   span.innerText = todo.todo;
-  btn.innerText = "x";
-  document.body.appendChild(li).appendChild(span);
-  document.body.appendChild(li).appendChild(btn);
+  btn.innerText = "❌";
+
+  li.appendChild(span);
+  li.appendChild(btn);
+  todoList.appendChild(li);
 
   btn.addEventListener("click", onDeleteClick);
 
