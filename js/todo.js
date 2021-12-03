@@ -40,8 +40,8 @@ function showTodo(todo) {
   span.innerText = todo.todo;
   btn.innerText = "❌";
 
-  li.appendChild(span);
   li.appendChild(btn);
+  li.appendChild(span);
   todoList.appendChild(li);
 
   btn.addEventListener("click", onDeleteClick);

@@ -1,7 +1,142 @@
-body {
-  background-color: pink;
+@import url(reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Open+Sans:wght@400;500&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .hidden {
   display: none;
+}
+
+#weather {
+  display: flex;
+  font-size: 20px;
+  width: 100vw;
+  /* background-color: red; */
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+
+#weather span {
+  font-size: 25px;
+}
+
+#weather span:first-child {
+  margin-right: 8px;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 20px 8fr 80px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+main #clock {
+  font-size: 150px;
+  font-weight: 800;
+  justify-self: flex-start;
+  padding-bottom: 40px;
+}
+
+#login-form input,
+#login-form button {
+  font-size: 40px;
+  border: none;
+  padding: 20px;
+  /* margin-top: -50px; */
+  margin-bottom: 40px;
+}
+
+#login-greeting {
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+#login-form input:focus,
+#todo-form input:focus {
+  outline: none;
+}
+
+#login-form button {
+  border-radius: 20px;
+  border: 1px solid black;
+  /* font-family: "Do+Hyeon"; */
+  font-family: "Do Hyeon", sans-serif;
+}
+
+#login-form {
+  display: flex;
+  width: 70%;
+  justify-content: inherit;
+}
+
+#todo-form {
+  /* padding-right: 70px; */
+  width: 70%;
+  text-align: center;
+}
+
+#todo-form input {
+  font-size: 24px;
+  border: none;
+  padding: 30px 20px;
+  width: 100%;
+  /* width: 556px; */
+  margin-bottom: 30px;
+}
+#todo-list {
+  width: 70%;
+}
+
+#todo-list li {
+  margin-bottom: 10px;
+}
+
+#todo-list span {
+  font-size: 20px;
+}
+
+#todo-list button {
+  font-size: 10px;
+  margin-right: 15px;
+  /* padding: auto; */
+}
+
+#quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#quote span:first-child {
+  font-size: 20px;
+  margin-bottom: 8px;
 }
