@@ -16,10 +16,6 @@ img {
   z-index: -1;
 }
 
-.hidden {
-  display: none;
-}
-
 #weather {
   display: flex;
   font-size: 20px;
@@ -92,9 +88,9 @@ main #clock {
 }
 
 #login-form {
-  display: flex;
+  /* display: flex; */
   width: 70%;
-  justify-content: inherit;
+  /* justify-content: inherit; */
 }
 
 #todo-form {
@@ -139,4 +135,8 @@ main #clock {
 #quote span:first-child {
   font-size: 20px;
   margin-bottom: 8px;
+}
+
+.hidden {
+  display: none;
 }
