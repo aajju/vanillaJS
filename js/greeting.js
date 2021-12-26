@@ -1,7 +1,7 @@
 const HIDDEN_CLASS = "hidden";
 const USERNAME_KEY = "username";
 
-const loginForm = document.querySelector("#login-form");
+const loginForm = document.querySelector("#login-container");
 const loginGreeting = document.querySelector("#login-greeting");
 const loginInput = document.querySelector("#login-form input");
 

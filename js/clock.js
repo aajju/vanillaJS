@@ -22,7 +22,7 @@ function showClock() {
 
   prettyHour = String(date.getHours()).padStart(2, "0");
   prettyMinutes = String(date.getMinutes()).padStart(2, "0");
-  //   prettySeconds = String(date.getSeconds()).padStart(2, "0");
+  prettySeconds = String(date.getSeconds()).padStart(2, "0");
 
   //   if (date.getSeconds() < 10) {
   //     prettySeconds = `0${date.getSeconds()}`;
@@ -32,7 +32,7 @@ function showClock() {
 
   //   clock.innerText = `${prettyHour} : ${prettyMinutes} : ${prettySeconds}`;
 
-  clock.innerText = `${prettyHour} : ${prettyMinutes}`;
+  clock.innerText = `${prettyHour} : ${prettyMinutes} : ${prettySeconds}`;
 }
 
 showClock();

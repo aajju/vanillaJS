@@ -17,16 +17,18 @@
 
     <main>
       <h2 id="clock">00:00</h2>
+      <div id="login-container">
+        <form id="login-form">
+          <input
+            required
+            maxlength="11"
+            type="text"
+            placeholder="what is your name?"
+          />
+          <button>로그인</button>
+        </form>
+      </div>
 
-      <form id="login-form" class="hidden">
-        <input
-          required
-          maxlength="11"
-          type="text"
-          placeholder="what is your name?"
-        />
-        <button>로그인</button>
-      </form>
       <h1 id="login-greeting" class="hidden"></h1>
       <form id="todo-form">
         <input
